@@ -1,38 +1,18 @@
 import numpy as np
 
-def is_prime(n):
-    if n <= 1:
-        return False
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
-n = 12  
-array_random = np.random.randint(0, 101, size=(n,n))
-print("Ma trận ngẫu nhiên:")
-print(array_random)
+path = "diemlop2a.txt"
+diem_2a = np.loadtxt(path, delimiter=",", dtype=np.int32)
+print(diem_2a)
 
-print("Kiểu dữ liệu trong mảng array_random:", array_random.dtype)
-print("Kích thước trong mảng array_random:", array_random.shape)
-print("Số phần tử có trong mảng array_random:", array_random.size)
-print("Số chiều trong mảng array_random:", array_random.ndim)
+for i in range(diem_2a.shape[1]):
+    print("DTB cua tung HS", i, ":", diem_2a[:, i].mean())
 
-while True:
-    try:
-        x = int(input("Nhập số nguyên x (0 < x < 100): "))
-        if 0 < x < 100:
-            break
-        else:
-            print("Vui lòng nhập số trong khoảng (0, 100).")
-    except ValueError:
-        print("Vui lòng nhập một số nguyên hợp lệ.")
+diem_tb = diem_2a.mean(axis=0)
+diem_cao= np.argmax(diem_tb)
+print("HS co diem tb cao nhat:", diem_cao, ":", diem_tb[diem_cao])
+print("bang diem day du cua hs:", diem_cao, ":", diem_2a.T[diem_cao])
 
-# Đếm số phần tử
-equal_to_x = np.sum(array_random == x)
-greater_than_x = np.sum(array_random > x)
-less_than_x = np.sum(array_random < x)
-
-# Hiển thị kết quả
-print(f"Số phần tử bằng {x}: {equal_to_x}")
-print(f"Số phần tử lớn hơn {x}: {greater_than_x}")
-print(f"Số phần tử nhỏ hơn {x}: {less_than_x}")
+diem_tb = diem_2a.mean(axis=0)
+diem_thap= np.argmin(diem_tb)
+print("HS co diem TB thap nhat:", diem_thap, ":", diem_tb[diem_thap])
+print("bang diem day du cua hs:", diem_thap, ":", diem_2a.T[diem_thap])
