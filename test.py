@@ -4,15 +4,24 @@ path = "diemlop2a.txt"
 diem_2a = np.loadtxt(path, delimiter=",", dtype=np.int32)
 print(diem_2a)
 
-for i in range(diem_2a.shape[1]):
-    print("DTB cua tung HS", i, ":", diem_2a[:, i].mean())
+# Calculate the standard deviation for each student
+std_devs = np.std(diem_2a, axis=1)
 
-diem_tb = diem_2a.mean(axis=0)
-diem_cao= np.argmax(diem_tb)
-print("HS co diem tb cao nhat:", diem_cao, ":", diem_tb[diem_cao])
-print("bang diem day du cua hs:", diem_cao, ":", diem_2a.T[diem_cao])
+# Find the student with the most consistent scores (lowest standard deviation)
+sv_diem_dongdeu = np.argmin(std_devs)
+print("Sinh vien co diem dong deu nhat:", sv_diem_dongdeu , diem_2a[sv_diem_dongdeu ])
 
-diem_tb = diem_2a.mean(axis=0)
-diem_thap= np.argmin(diem_tb)
-print("HS co diem TB thap nhat:", diem_thap, ":", diem_tb[diem_thap])
-print("bang diem day du cua hs:", diem_thap, ":", diem_2a.T[diem_thap])
+# Find the student with the most varied scores (highest standard deviation)
+sv_diem_chechlech = np.argmax(std_devs)
+print("Sinh vien co diem cac mon lech nhat trong lop:", sv_diem_chechlech, diem_2a[sv_diem_chechlech])
+
+# Calculate the standard deviation for each subject
+do_lech_mon = np.std(diem_2a, axis=0)
+
+# Find the subject with the most consistent scores (lowest standard deviation)
+most_consistent_subject = np.argmin(do_lech_mon )
+print("Mon hoc co diem dong deu nhat:", most_consistent_subject)
+
+# Find the subject with the most varied scores (highest standard deviation)
+most_varied_subject = np.argmax(do_lech_mon )
+print("Mon hoc co diem chenh lech nhat:", most_varied_subject)
