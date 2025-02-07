@@ -62,3 +62,4 @@ B=np.array([(1,3,1,4),(3,9,5,15),(0,2,1,1),(0,4,2,3)])
 B_T=B.T
 print("ma tran a",B)
 print("ma tran chuyen vi",B_T)
+
