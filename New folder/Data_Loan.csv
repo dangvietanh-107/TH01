@@ -1,0 +1,6 @@
+loan_amnt,term,int_rate,emp_length,home_ownership,annual_inc,purpose,addr_state,dti,delinq_2yrs,revol_util,total_acc,bad_loan,longest_credit_line,verification_status
+5000,36 months,10.65,10,RENT,24000,credit_card,AZ,27.65,0,83.7,9,0,26,verified
+2500,36 months,15.27,0,RENT,30000,car,GA,1,0,9.4,4,1,12,verified
+2400,36 months,15.96,10,RENT,12252,small_business,IL,8.72,0,98.5,10,0,10,not verified
+10000,36 months,13.49,10,RENT,49200,other,CA,20,0,21,37,0,15,verified
+5000,36 months,7.9,3,RENT,36000,wedding,AZ,11.2,0,28.3,12,0,7,verified

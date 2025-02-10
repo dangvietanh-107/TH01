@@ -1,0 +1,24 @@
+loan_amnt,term,int_rate,emp_length,home_ownership,annual_inc,purpose,addr_state,dti,delinq_2yrs,revol_util,total_acc,bad_loan,longest_credit_line,verification_status
+5000,36 months,10.65,10,RENT,24000,credit_card,AZ,27.65,0,83.7,9,0,26,verified
+2500,36 months,15.27,0,RENT,30000,car,GA,1,0,9.4,4,1,12,verified
+2400,36 months,15.96,10,RENT,12252,small_business,IL,8.72,0,98.5,10,0,10,not verified
+10000,36 months,13.49,10,RENT,49200,other,CA,20,0,21,37,0,15,verified
+5000,36 months,7.9,3,RENT,36000,wedding,AZ,11.2,0,28.3,12,0,7,verified
+3000,36 months,18.64,9,RENT,48000,car,CA,5.35,0,87.5,4,0,4,verified
+5600,36 months,21.28,4,OWN,40000,small_business,CA,5.55,0,32.6,13,1,7,verified
+5375,60 months,12.69,0,RENT,15000,other,TX,18.08,0,36.5,3,1,7,verified
+6500,60 months,14.65,5,OWN,72000,debt_consolidation,AZ,16.12,0,20.6,23,0,13,not verified
+12000,36 months,12.69,10,OWN,75000,debt_consolidation,CA,10.78,0,67.1,34,0,22,verified
+9000,36 months,13.49,0,RENT,30000,debt_consolidation,VA,10.08,0,91.7,9,1,7,verified
+3000,36 months,9.91,3,RENT,15000,credit_card,IL,12.56,0,43.1,11,0,8,verified
+10000,36 months,10.65,3,RENT,100000,other,CA,7.06,0,55.5,29,1,20,verified
+1000,36 months,16.29,0,RENT,28000,debt_consolidation,MO,20.31,0,81.5,23,0,4,not verified
+10000,36 months,15.27,4,RENT,42000,home_improvement,CA,18.6,0,70.2,28,0,13,not verified
+3600,36 months,6.03,10,MORTGAGE,110000,major_purchase,CT,10.52,0,16,42,0,18,not verified
+6000,36 months,11.71,1,MORTGAGE,84000,medical,UT,18.44,2,37.73,14,0,8,verified
+9200,36 months,6.03,6,RENT,77385.19,debt_consolidation,CA,9.86,0,23.1,28,0,10,not verified
+21000,36 months,12.42,10,RENT,105000,debt_consolidation,FL,13.22,0,90.3,38,1,28,verified
+10000,36 months,11.71,10,OWN,50000,credit_card,TX,11.18,0,82.4,21,0,26,verified
+10000,36 months,11.71,5,RENT,50000,debt_consolidation,CA,16.01,0,91.8,17,0,8,not verified
+6000,36 months,11.71,1,RENT,76000,major_purchase,CA,2.4,0,29.7,7,1,10,not verified
+15000,36 months,9.91,2,MORTGAGE,92000,credit_card,IL,29.44,0,93.9,31,0,9,verified
