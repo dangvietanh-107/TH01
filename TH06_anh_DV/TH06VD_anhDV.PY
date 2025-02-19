@@ -255,7 +255,7 @@ print(df1.head(10))
 # Lấy dữ liệu chuyển vào các biến kiểu list
 dt_time, dt_rain, dt_t2m, dt_tm, dt_tx = [], [], [], [], []
 
-for i in data_mg:
+for i in data_:
     dt_time.append(str(i['Time']))
     dt_rain.append(i['Rain'])
     dt_t2m.append(i['T2m'])

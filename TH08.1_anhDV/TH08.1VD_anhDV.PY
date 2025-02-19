@@ -233,7 +233,7 @@ except:
 import mysql.connector
 #tạo đối tượng connection
 myconn = mysql.connector.connect(host = "localhost", user = "root",
- passwd = "1234567890", database = "PythonDB")
+ passwd = "", database = "PythonDB")
 #tạo đối tượng cursor
 cur = myconn.cursor()
 try:
@@ -248,7 +248,7 @@ myconn.close()
 import mysql.connector
 #tạo đối tượng connection
 myconn = mysql.connector.connect(host = "localhost", user = "root",
- passwd = "1234567890", database = "PythonDB")
+ passwd = "", database = "PythonDB")
 #tạo đối tượng cursor
 cur = myconn.cursor()
 try:
